@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="icon" href="Images/accounting.png">
+    <title>شغل المحل</title>
+</head>
+<body>
+    <header>
+        <h1>Abo Fares</h1>
+        <div class="logo"><img src="images/logo.jpg" alt=""></div>
+    </header>
+    <section class="password_section">
+        <div>
+            <p>كلمة السر غير صحيحة</p>
+            <input type="password" name="passowrd" id="password" placeholder="ادخل كلمة السر">
+            <button>دخول</button>
+        </div>
+    </section>
+
+    <div class="main-container">
+        <section class="container">
+            <form id="form">
+                <div class="del_search">
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="البحث عن منتج">
+                        <button>بحث</button>
+                    </div>
+                    <div class="delete_all">
+                        <button>حذف الكل</button>
+                        <div class="approve_delete">
+                            <div>
+                                <p>هل انت متاكد انك تريد حذف كل المنتجات؟</p>
+                                <p class="check">كلمة مرور غير صحيحة</p>
+                                <input type="text" name="password2" id="passwordD" placeholder="ادخل كلمة السر">
+                                <span class="cancel">الغاء</span>
+                                <span class="approve">حذف</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" name="title" id="title" placeholder="اسم المنتج">
+                <select name="select" id="select">
+                    <option value="phone">موبايل</option>
+                    <option value="others">اخرى</option>
+                </select>
+                <input type="number" name="buying_price" id="buying_price" placeholder="سعر الشراء" min="0">
+                <input type="number" name="selling_price" id="selling_price" placeholder="سعر البيع" min="0">
+                <input type="number" name="amount" id="amount" placeholder="الكمية" min="0">
+                <button id="add">اضافة</button>
+            </form>
+        </section>
+
+        <div class="table">
+            <h2>اخرى</h2>
+            <table class="others_table">
+                <thead>
+                    <th>حذف</th>
+                    <th>تعديل</th>
+                    <th>الكمية</th>
+                    <th>البيع</th>
+                    <th>الشراء</th>
+                    <th>الاسم</th>
+                    <th>التاريخ</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        
+        <div class="table">
+            <h2>موبايلات</h2>
+            <table class="phones_table">
+                <thead>
+                    <th>حذف</th>
+                    <th>تعديل</th>
+                    <th>الكمية</th>
+                    <th>البيع</th>
+                    <th>الشراء</th>
+                    <th>الاسم</th>
+                    <th>التاريخ</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    
+    </div>
+
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
